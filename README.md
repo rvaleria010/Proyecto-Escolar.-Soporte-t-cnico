@@ -24,16 +24,17 @@ Sistema web para registrar, clasificar, priorizar y dar seguimiento a incidencia
 2.  Descomprima el zip
 3.	Ubíquese en la raíz del proyecto
 4.	Corra en una máquina Linux 
+  
+        docker compose up --build -d
+        
+        docker compose exec backend alembic upgrade head
+        
+        docker compose exec backend python -m app.seeds all
 
-docker compose up --build -d
+5.	Ingrese, por ejemplo, con el usuario
 
-docker compose exec backend alembic upgrade head
-
-docker compose exec backend python -m app.seeds all
-
-3.	Ingrese, por ejemplo, con el usuario 
-Administrador: "email": "amartinez@uaemex.mx", "password": "Prueba1234"
-
-Técnico: "email": "lhernandez@uaemex.mx", "password": " ClaveSegura#2026"
-
-Usuario normal: "email": "egarcia@uaemex.mx", "password": "ClaveSegura#2026"
+        Administrador: "email": "amartinez@uaemex.mx", "password": "Prueba1234"
+        
+        Técnico: "email": "lhernandez@uaemex.mx", "password": " ClaveSegura#2026"
+        
+        Usuario normal: "email": "egarcia@uaemex.mx", "password": "ClaveSegura#2026"
