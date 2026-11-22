@@ -20,8 +20,10 @@ Sistema web para registrar, clasificar, priorizar y dar seguimiento a incidencia
 
 
 ## Como correrlo 
-1.	Ubíquese en la raíz del proyecto
-2.	Corra en una máquina Linux 
+1.  Descargue sigpi-main1211.zip
+2.  Descomprima el zip
+3.	Ubíquese en la raíz del proyecto
+4.	Corra en una máquina Linux 
 
 docker compose up --build -d
 
